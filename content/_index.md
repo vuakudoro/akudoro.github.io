@@ -1,8 +1,12 @@
 ---
 title: "Victor Akudoro"
 type: landing
-outputs:
-  - HTML
+sections:
+  - block: about.biography
+  - block: experience
+  - block: skills
+  - block: publications
+  - block: contact
 ---
 
 # Victor Akudoro
