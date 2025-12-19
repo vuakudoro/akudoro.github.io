@@ -1,31 +1,8 @@
-outputs:
-  home:
-    - HTML
-  page:
-    - HTML
-  section:
-    - HTML
-  taxonomy:
-    - HTML
-  term:
-    - HTML
-
-disableKinds:
-  - RSS
-
-# --------------------------------------------------
-# HugoBlox / Hugo build configuration
-# --------------------------------------------------
-
 build:
   hugo_version: "0.152.2"
   template:
     id: "academic-cv"
     name: "Academic CV"
-
-# --------------------------------------------------
-# Site identity (CRITICAL)
-# --------------------------------------------------
 
 baseURL: "https://vuakudoro.github.io/"
 title: "Victor Akudoro"
@@ -35,16 +12,13 @@ disableKinds:
   - RSS
   - taxonomy
   - term
-
-# --------------------------------------------------
-# Hugo settings
-# --------------------------------------------------
-
-enableRobotsTXT: true
+  - sitemap
 
 outputs:
   home:
     - HTML
+
+enableRobotsTXT: true
 
 params:
   author: "Victor Akudoro"
