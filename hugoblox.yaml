@@ -8,12 +8,14 @@ baseURL: "https://vuakudoro.github.io/"
 title: "Victor Akudoro"
 languageCode: "en-us"
 
+# Disable all non-HTML outputs (THIS FIXES THE XML ISSUE)
 disableKinds:
   - RSS
   - taxonomy
   - term
   - sitemap
 
+# Ensure homepage outputs HTML only
 outputs:
   home:
     - HTML
@@ -22,4 +24,8 @@ enableRobotsTXT: true
 
 params:
   author: "Victor Akudoro"
-  description: "Academic website showcasing research, publications, figures, and media in cyclostratigraphy, sedimentary geology, and Earth surface processes."
+  description: >
+    Academic website showcasing research, publications, figures,
+    and media in cyclostratigraphy, sedimentary geology,
+    and Earth surface processes.
+# Force clean rebuild
