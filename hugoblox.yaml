@@ -1,5 +1,33 @@
+# --------------------------------------------------
+# HugoBlox / Hugo build configuration
+# --------------------------------------------------
+
 build:
-  hugo_version: '0.152.2'
-template:
-  id: "academic-cv"
-  name: "Academic CV"
+  hugo_version: "0.152.2"
+  template:
+    id: "academic-cv"
+    name: "Academic CV"
+
+# --------------------------------------------------
+# Site identity (CRITICAL)
+# --------------------------------------------------
+
+baseURL: "https://akudoro.github.io/"
+title: "Victor Akudoro"
+languageCode: "en-us"
+
+# --------------------------------------------------
+# Hugo settings
+# --------------------------------------------------
+
+enableRobotsTXT: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  author: "Victor Akudoro"
+  description: "Academic website showcasing research, publications, figures, and media in cyclostratigraphy, sedimentary geology, and Earth surface processes."
