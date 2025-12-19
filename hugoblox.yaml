@@ -1,31 +1,29 @@
-build:
-  hugo_version: "0.152.2"
-  template:
-    id: "academic-cv"
-    name: "Academic CV"
-
 baseURL: "https://vuakudoro.github.io/"
 title: "Victor Akudoro"
 languageCode: "en-us"
 
-# Disable all non-HTML outputs (THIS FIXES THE XML ISSUE)
-disableKinds:
-  - RSS
-  - taxonomy
-  - term
-  - sitemap
+# ----------------------------
+# HugoBlox module mounts
+# (THIS IS WHAT FIXES THE 404)
+# ----------------------------
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: static
+      target: static
+    - source: layouts
+      target: layouts
+    - source: data
+      target: data
+    - source: content
+      target: content
 
-# Ensure homepage outputs HTML only
-outputs:
-  home:
-    - HTML
-
+# ----------------------------
+# Site settings
+# ----------------------------
 enableRobotsTXT: true
 
 params:
   author: "Victor Akudoro"
-  description: >
-    Academic website showcasing research, publications, figures,
-    and media in cyclostratigraphy, sedimentary geology,
-    and Earth surface processes.
-# Force clean rebuild
+  description: "Academic website showcasing research, publications, figures, and media in cyclostratigraphy, sedimentary geology, and Earth surface processes."
