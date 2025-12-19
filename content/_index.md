@@ -1,6 +1,6 @@
 ---
 title: "Victor Akudoro"
-type: "landing"
+layout: "landing"
 ---
 
 Welcome to my academic website.
